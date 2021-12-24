@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View, TouchableOpacity} from 'react-native';
+import { styles } from './themes.js'
 
 export default function App() {
   return (
@@ -8,20 +9,10 @@ export default function App() {
       <Text style={styles.textStyle}>
         Get Stuff Done!
       </Text>
+      <TouchableOpacity style={styles.addBtnStyle}>
+        <Text style={styles.addBtnText}>+</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#393E46',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  textStyle: {
-    fontSize: 20,
-    color: '#ffaec8',
-  },
-});
