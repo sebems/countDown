@@ -3,20 +3,20 @@ import React from 'react';
 import { Text, View, TouchableOpacity} from 'react-native';
 import { styles } from './themes.js'
 
-function Setting() {
+export default function SettingsScreen() {
   return (
     <View style={styles.container}>
 
-      <TouchableOpacity style={styles.btnStyle}>
-        <Text style={styles.btnText}>Themes</Text>
+      <TouchableOpacity style={styles.settingsButtons}>
+        <Text style={styles.settingsText}>Themes</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.btnStyle}>
-        <Text style={styles.btnText}>Language</Text>
+      <TouchableOpacity style={styles.settingsButtons}>
+        <Text style={styles.settingsText}>Language</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.btnStyle}>
-        <Text style={styles.btnText}>Contanct Me</Text>
+      <TouchableOpacity style={styles.settingsButtons}>
+        <Text style={styles.settingsText}>Contact Me</Text>
       </TouchableOpacity>
 
       <StatusBar style="auto" />

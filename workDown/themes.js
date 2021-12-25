@@ -28,6 +28,33 @@ export const styles = StyleSheet.create({
     padding: '15%',
   },
 
+  // Settings Button
+
+  settingsButtons: {
+    backgroundColor: '#26292e',
+    borderWidth: 3,
+    width: '70%',
+    alignItems: 'center',
+    marginBottom: 20,
+    padding: 10,
+    borderRadius: 10,
+  },
+
+  settingsMenu: {
+    backgroundColor: '#26292e',
+    borderRadius: 100,
+    width: '12%',
+    height: '5.75%',
+    alignItems: 'center',
+    bottom: '35%',
+    left: '35%',
+  },
+
+  settingsText: {
+    fontSize: 25,
+    color: '#fff',
+  },
+
   // General Button Style
   btnStyle: {
     backgroundColor: '#26292e',
@@ -41,7 +68,7 @@ export const styles = StyleSheet.create({
   btnText: {
     fontSize: 25,
     color: '#fff',
-    padding: '15%',
+    // padding: '15%',
   }
 
 });
