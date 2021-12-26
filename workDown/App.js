@@ -1,8 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState, useContext} from 'react';
+
 import { Text, View, TouchableOpacity} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// Styles and Screens Import
 import styles from './themes.js'
 import HomeScreen from './HomeScreen.js'
 import SettingsScreen from './settings.js'
